@@ -1,7 +1,209 @@
-<html>
-    <body>
-        <h1>Welcome to PhotoGallery</h1>
-        <p>This is a sample HTML page.</p>
-        <h2>photos</h2>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mounika Chiluka | Software Developer & Technical Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#hero" class="logo">&lt;MC /&gt;</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Hi, my name is</p>
+        <h1 class="hero-title">Mounika Chiluka.</h1>
+        <h2 class="hero-subtitle">I build full-stack web apps &amp; AI systems.</h2>
+        <p class="hero-description">
+          I'm a software developer and technical instructor specializing in cloud-hosted full-stack applications, applied machine learning, and developer tooling.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I bridge the gap between production engineering and developer education. Alongside building serverless backends, React interfaces, and NLP/computer-vision pipelines, I design hands-on curriculum and technical workshops on full-stack development, software testing, and command-line workflows.
+            </p>
+            <p>
+              Whether architecting an API on AWS Lambda or breaking down time complexity and Linux internals for learners, I focus on clean architecture, reliability, and clarity.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="stat-card">
+              <span class="stat-label">Focus Areas</span>
+              <span class="stat-value">Full-Stack Web &amp; Applied AI</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Cloud &amp; DevOps</span>
+              <span class="stat-value">AWS Lambda, CloudFront, Linux</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Testing &amp; QA</span>
+              <span class="stat-value">Playwright, Unit &amp; Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Technical Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <ul class="tag-list">
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>Responsive UI</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; Cloud</h3>
+            <ul class="tag-list">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>AWS Lambda</li>
+              <li>AWS CloudFront</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI &amp; Data</h3>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>Google Generative AI</li>
+              <li>Embeddings &amp; RAG</li>
+              <li>EasyOCR &amp; TF-IDF</li>
+              <li>Scikit-Learn</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; Testing</h3>
+            <ul class="tag-list">
+              <li>Linux / Bash</li>
+              <li>Git &amp; GitHub</li>
+              <li>Playwright</li>
+              <li>Ollama / Local LLMs</li>
+              <li>SDLC &amp; STLC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">AI &amp; Computer Vision</span>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub Repository">Code</a>
+                <a href="#" aria-label="Live Demo">Live</a>
+              </div>
+            </div>
+            <h3>AI Cyberbullying Detection &amp; Recommendation System</h3>
+            <p>
+              Pre-posting moderation pipeline that extracts text from meme images via EasyOCR, classifies toxicity using TF-IDF and Logistic Regression, and suggests constructive rewrites with confidence scoring.
+            </p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>EasyOCR</li>
+              <li>Scikit-Learn</li>
+              <li>NLP</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Full-Stack &amp; GenAI</span>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub Repository">Code</a>
+                <a href="#" aria-label="Live Demo">Live</a>
+              </div>
+            </div>
+            <h3>AI Helpdesk &amp; Semantic Search Assistant</h3>
+            <p>
+              Full-stack support platform powered by Google Generative AI embeddings for semantic ticket matching, automated draft responses, and knowledge-base retrieval.
+            </p>
+            <ul class="project-tech">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Embeddings</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Serverless Cloud</span>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub Repository">Code</a>
+                <a href="#" aria-label="Live Demo">Live</a>
+              </div>
+            </div>
+            <h3>Serverless Course Inquiry Chatbot API</h3>
+            <p>
+              Low-latency conversational backend deployed on AWS Lambda and distributed globally via AWS CloudFront, engineered with structured JSON parsing and cold-start resilience.
+            </p>
+            <ul class="project-tech">
+              <li>AWS Lambda</li>
+              <li>CloudFront</li>
+              <li>Express</li>
+              <li>REST API</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-content">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-description">
+          Open to software engineering collaborations, technical curriculum consulting, and full-stack or AI development opportunities.
+        </p>
+        <a href="mailto:hello@example.com" class="btn btn-primary">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Designed &amp; Built by Mounika Chiluka</p>
+      <div class="social-links">
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
